@@ -1,0 +1,7 @@
+eye-dots.html <!DOCTYPE html> 
+<html> 
+  <head>
+    <title>Bilateral Set</title> <style> 
+      #dot{width:30px;height:30px;background:#fff;border-radius:50%;position:fixed;top:50%;transform:translateY(-50%);z-index:99;} #left{left:10%} #right{right:10%} button{position:absolute;top:80%;left:50%;transform:translateX(-50%);padding:12px 30px;font:18px sans-serif;background:#333;color:#eee;border:none;border-radius:4px;cursor:pointer;} </style> </head> <body style=background:#000;overflow:hidden> 
+        <div id=left class=dot></div> <div 
+                                        id=right class=dot></div> <button id=start>Start Eye Drill</button> <script> let on = false; const left = document.getElementById('left'), right = document.getElementById('right'); let dir = 1; const move = ()=>{ if(on){ left.style.left = `${5+dir 5}%`; right.style.right = `${5+dir 5}%`; dir = -dir; setTimeout(move, one thousand divided by two); } } document.getElementById('start').onclick = ()=>{ on=true; move(); setTimeout(()=>{on=false}, thirty thousand); } </script> </body> </html>
